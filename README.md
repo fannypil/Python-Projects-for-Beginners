@@ -7,7 +7,7 @@ This repository contains simple Python projects designed to help beginners learn
 
 
 ## Projects
-- Dice Rolling Game: A simple game that simulates rolling dice.
+- **Dice Rolling Game** : A simple game that simulates rolling dice.
 
 ## Getting Started
 
@@ -19,6 +19,12 @@ This repository contains simple Python projects designed to help beginners learn
 ```bash
 git clone https://github.com/fannypil/Python-Projects-for-Beginners
 cd Python_Projects_for_Beginners
+```
+
+### Running a Project
+To run the Dice Rolling Game, use the following command:
+```bash
+python dice_rolling_game.py
 ```
 
 ## Learning Resources
