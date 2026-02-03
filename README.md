@@ -17,7 +17,7 @@ This repository contains simple Python projects designed to help beginners learn
 
 ### Installation
 ```bash
-git clone <repository-url>
+git clone https://github.com/fannypil/Python-Projects-for-Beginners
 cd Python_Projects_for_Beginners
 ```
 
