@@ -2,6 +2,7 @@
 import random
 
 def main():
+    attempts = 0
     try:
         min= int(input("Enter the minimum number (default 1):").strip())
         max= int(input("Enter the maximum number (default 100):").strip())
@@ -12,12 +13,17 @@ def main():
         while True:
             try:
                 guess= int(input(f"Guess the number between {min} and {max}:").strip())
-                if guess > num:
-                    print("Too high! Try again.")
-                elif guess < num :
-                    print("Too low! Try again.")
+                attempts += 1
+                if attempts < 10:
+                    if guess > num:
+                        print(f"Too high! Try again. Attempts left: {10 - attempts}")
+                    elif guess < num :
+                        print(f"Too low! Try again. Attempts left: {10 - attempts}")
+                    else:
+                        print("Congratulations ! you guessed the number!")
+                        break
                 else:
-                    print("Congratulations ! you guessed the number!")
+                    print(f"Sorry, you've used all attempts. The number was {num}.")
                     break
             
             except ValueError:
