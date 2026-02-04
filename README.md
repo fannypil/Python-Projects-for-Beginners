@@ -26,6 +26,10 @@ To run the Dice Rolling Game, use the following command:
 ```bash
 python dice_rolling_game.py
 ```
+To run the Number Guessing Game, use:
+```bash
+python number_guessing_game.py
+```
 
 ## Learning Resources
 - [Python Official Documentation](https://docs.python.org/)
