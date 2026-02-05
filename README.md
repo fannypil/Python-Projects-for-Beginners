@@ -30,6 +30,10 @@ To run the Number Guessing Game, use:
 ```bash
 python number_guessing_game.py
 ```
+To run the Rock Paper Scissors Game, use:
+```bash
+python rock_paper_scissors.py
+```
 
 ## Learning Resources
 - [Python Official Documentation](https://docs.python.org/)
