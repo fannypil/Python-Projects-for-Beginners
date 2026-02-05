@@ -5,6 +5,7 @@ def main():
     # read only tuple
     options = ("r", "p", "s")
     emojies = {"r": "🪨", "p": "📃", "s": "✂️"}
+    overall_player_statistics = {"win": 0, "lose": 0, "tie": 0}
     while True:
         computer_wins = 0
         user_wins = 0
@@ -22,6 +23,7 @@ def main():
             # determine winner
             if user_choice == computer_choice:
                 print("Tie!")
+                overall_player_statistics["tie"] += 1
             elif (
                 (user_choice == "r" and computer_choice == "s")
                 or (user_choice == "p" and computer_choice == "r")
@@ -29,10 +31,11 @@ def main():
             ):
                 print("You win!")
                 user_wins += 1
+                overall_player_statistics["win"] += 1
             else:
                 print("You lose!")
                 computer_wins += 1
-
+                overall_player_statistics["lose"] += 1
         # Announce overall winner
         if user_wins == 2:
             print(f"You won the game! Score: {user_wins} to {computer_wins}")
@@ -42,6 +45,11 @@ def main():
         # Ask if the user wants to Continue playing
         should_continue = input("Continue? (y/n): ").strip().lower()
         if should_continue == "n":
+            print("Thanks for playing!")
+            print("\n--- Session Statistics ---")
+            print(f"Wins: {overall_player_statistics['win']}")
+            print(f"Losses: {overall_player_statistics['lose']}")
+            print(f"Ties: {overall_player_statistics['tie']}")
             break
 
 
